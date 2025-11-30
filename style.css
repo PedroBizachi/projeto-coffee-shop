@@ -1,6 +1,40 @@
-/* Geral Styles */
+/* General Styles */
+:root {
+    --color-v1: #fff5d8;
+    --color-v2: #ffedba;
+    --color-v4: #241d03;
+    --color-v5: #DFDAD1;
+    --color-v6: #CAC4B2;
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    background-color: var(--color-v1);
+}
+
+header {
+    background-color: var(--color-v4);
+    height: 20vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    position: fixed;
+    background-color: #ffffff68;
+    border-radius: 35px;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+}
+
+header nav a {
+    margin: 25px;
 }
