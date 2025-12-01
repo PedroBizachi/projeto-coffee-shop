@@ -8,6 +8,8 @@
     --color-v5: #1b1002;
     --color-v6: #fffae6;
     --color-v7: #1b100270;
+    --color-v8: #dfceab;
+    --color-v9: #fff6e3;
 
     /* Fonts */
     --outfit-font: "Outfit", sans-serif;
@@ -162,6 +164,7 @@ main section#about {
 main section#map {
     background-color: var(--color-v5);
     color: var(--color-v1);
+    margin: 10px 0;
 }
 
 main section#map p {
@@ -178,4 +181,26 @@ main section#map figcaption iframe {
 main section#map figcaption p {
     font: bold 0.9em var(--poppins-font);
     text-align: center;
+}
+
+
+main section#buy {
+    background-color: var(--color-v8);
+    margin: 10px 0;
+}
+
+main section#buy article {
+    background-color: var(--color-v9);
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 6.7px;
+}
+
+main section#buy article ul {
+    font: normal 0.9em var(--manrope-font);
+    margin-left: 15px;
+}
+
+main section#buy article ul li {
+    list-style: square inside url("https://img.icons8.com/sf-black-filled/16/cafe.png");
 }
