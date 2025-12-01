@@ -39,13 +39,14 @@
             <p>Produtos com <strong>garantia</strong> e <strong>certificados</strong>, tudo apenas para nossos clientes.</p>
             <p>Seja bem-vindo.</p>
 
-            <div class="first-button">
-                <a href="#about"><button id="about-our-shop">Sobre Nós</button></a>
-            </div>
-
-            <div class="second-button">
-                <a href="#buy"><button id="buy-our-coffee">Compre nossos cafés</button></a>
-            </div>
+            <article>
+                <div class="first-button">
+                    <a href="#about"><button id="about-our-shop">Sobre Nós</button></a>
+                </div>
+                <div class="second-button">
+                    <a href="#buy"><button id="buy-our-coffee">Compre nossos cafés</button></a>
+                </div>
+            </article>
         </section>
 
         <section id="about">
@@ -142,21 +143,22 @@
         </section>
 
         <section id="contact">
-            <form>
+            <form method="get" action="cadastro.html">
                 <fieldset>
                     <legend>Contato</legend>
-                    <p>
-                        <label for="nome"><img src="https://img.icons8.com/liquid-glass/48/test-account.png" alt="test-account"/></label>
-                        <input type="text" name="nome" id="nome" placeholder="seu nome" minlength="3" maxlength="50" autocomplete="name" required>
-                    </p>
+                    <div>
+                        <p>
+                            <label for="nome"><img src="https://img.icons8.com/liquid-glass/48/test-account.png" alt="test-account"/></label>
+                            <input type="text" name="nome" id="nome" placeholder="seu nome" minlength="3" maxlength="50" autocomplete="name" required>
+                        </p>
+                        <p>
+                            <label for="email"><img src="https://img.icons8.com/liquid-glass/48/new-post.png" alt="new-post"/></label>
+                            <input type="email" name="email" id="email" placeholder="seu email" minlength="7" maxlength="65" autocomplete="email" required>
+                        </p>
+                    </div>
 
                     <p>
-                        <label for="email"><img src="https://img.icons8.com/liquid-glass/48/new-post.png" alt="new-post"/></label>
-                        <input type="email" name="email" id="email" placeholder="seu email" minlength="7" maxlength="65" autocomplete="email" required>
-                    </p>
-
-                    <p>
-                        <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+                        <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem" required></textarea>
                     </p>
 
                     <p>
