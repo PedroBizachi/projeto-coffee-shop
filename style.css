@@ -6,7 +6,7 @@
     --color-v3: #230b0b;
     --color-v4: #ffecce;
     --color-v5: #1b1002;
-    --color-v6: #36301a;
+    --color-v6: #fffae6;
     --color-v7: #1b100270;
 
     /* Fonts */
@@ -33,7 +33,7 @@ body {
 
 header {
     background-color: var(--color-v5);
-    height: 20vh;
+    height: 95px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -72,10 +72,29 @@ main {
     padding: 15px;
 }
 
+main h1 {
+    text-shadow: 1px 1px 12px rgb(60, 60, 60);
+    font: normal 2.5em var(--tilt-warp-font);
+    color: var(--color-v1);
+    text-align: center;
+    border-width: 10px;
+    margin: 5px 0;
+}
+
+main h2 {
+    font-family: var(--poppins-font);
+}
+
+main h3 {
+    font-family: var(--outfit-font);
+}
+
 main p {
     margin: 5px 15px;
     text-align: justify;
+    font-size: 0.8em;
 }
+
 
 main section {
     padding: 10px;
@@ -84,16 +103,7 @@ main section {
 
 main section#home {
     background-color: var(--color-v2);
-    color: var(--color-v6);
-}
-
-main section#home h1 {
-    text-shadow: 1px 1px 12px rgb(60, 60, 60);
-    font: normal 2.5em var(--tilt-warp-font);
-    color: var(--color-v1);
-    text-align: center;
-    border-width: 10px;
-    margin: 5px 0;
+    color: var(--color-v5);
 }
 
 main section#home div {
@@ -108,7 +118,6 @@ main section#home div a button {
     font: normal 1em var(--outfit-font);
     border-radius: 12px;
     cursor: pointer;
-
     display: block;
     padding: 16px;
     margin: auto;
@@ -137,6 +146,20 @@ main section#home div a button#buy-our-coffee {
     color: var(--color-v2);
     border: none;
 }
+
+
+main section#about {
+    background-color: var(--color-v6);
+    margin: 15px 0;
+    border: 2px solid var(--color-v5);
+}
+
+main section#about h2 {
+    text-align: center;
+}
+
+
+
 
 
 
