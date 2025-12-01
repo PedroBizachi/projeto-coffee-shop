@@ -17,6 +17,26 @@
     --manrope-font: "Manrope", sans-serif;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-v4);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-v5);
+    border-radius: 10px;
+}
+
+/* Selection */
+::selection {
+    background-color: var(--color-v5);
+    color: var(--color-v3);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
