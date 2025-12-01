@@ -1,12 +1,20 @@
 /* General Styles */
 :root {
+    /* Colors */
     --color-v1: #fff5d8;
-    --color-v2: #ffedba;
-    --color-v4: #241d03;
-    --color-v5: #DFDAD1;
-    --color-v6: #CAC4B2;
-}
+    --color-v2: #d2c49d;
+    --color-v3: #230b0b;
+    --color-v4: #ffecce;
+    --color-v5: #1b1002;
+    --color-v6: #36301a;
+    --color-v7: #1b100270;
 
+    /* Fonts */
+    --outfit-font: "Outfit", sans-serif;
+    --poppins-font: "Poppins", sans-serif;
+    --tilt-warp-font: "Tilt Warp", sans-serif;
+    --manrope-font: "Manrope", sans-serif;
+}
 
 * {
     box-sizing: border-box;
@@ -14,27 +22,125 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-v1);
+    font-family: var(--manrope-font);
 }
 
 header {
-    background-color: var(--color-v4);
+    background-color: var(--color-v5);
     height: 20vh;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 17px black;
 }
 
 header nav {
     position: fixed;
-    background-color: #ffffff68;
+    background-color: #00000068;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 8px #3c3c3c7c;
     border-radius: 35px;
     padding: 10px;
-    backdrop-filter: blur(2px);
+    z-index: 1;
 }
 
 header nav a {
-    margin: 25px;
+    margin: 1.5vw;
+}
+
+header nav a img {
+    width: 35px;
+    transition: all, 0.2s ease-in;
+}
+
+header nav a img:hover {
+    filter: invert(0.2);
+}
+
+header nav a img:active {
+    filter: invert(0.3);
+}
+
+main {
+    padding: 15px;
+}
+
+main p {
+    margin: 5px 15px;
+    text-align: justify;
+}
+
+main section {
+    padding: 10px;
+    border-radius: 12px;
+}
+
+main section#home {
+    background-color: var(--color-v2);
+    color: var(--color-v6);
+}
+
+main section#home h1 {
+    text-shadow: 1px 1px 12px rgb(60, 60, 60);
+    font: normal 2.5em var(--tilt-warp-font);
+    color: var(--color-v1);
+    text-align: center;
+    border-width: 10px;
+    margin: 5px 0;
+}
+
+main section#home div {
+    margin: 10px;
+}
+
+main section#home div a {
+    text-decoration: none;
+}
+
+main section#home div a button {
+    font: normal 1em var(--outfit-font);
+    border-radius: 12px;
+    cursor: pointer;
+
+    display: block;
+    padding: 16px;
+    margin: auto;
+    height: 35px;
+    width: 85%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s ease-in-out;
+}
+
+main section#home div a button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--color-v7);
+}
+
+main section#home div a button#about-our-shop {
+    border: 2.5px solid var(--color-v5);
+    background-color: var(--color-v1);
+}
+
+main section#home div a button#buy-our-coffee {
+    background-color: var(--color-v5);
+    color: var(--color-v2);
+    border: none;
+}
+
+
+
+main section#map figcaption iframe {
+    height: 120px;
+    width: 250px;
 }
