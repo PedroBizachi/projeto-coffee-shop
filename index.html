@@ -11,16 +11,21 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://img.icons8.com/?size=96&id=4Z50cycdnHdj&format=png" type="image/x-icon">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap" rel="stylesheet">
+
     <!-- liquid-glass images available in https://icons8.com.br/icons/set/[image]--os-ios--style-liquid-glass -->
 </head>
 <body>
     <header>
         <nav>
-            <a href="#"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/home.png" alt="home"/></a>
-            <a href="#"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/info.png" alt="info"/></a>
-            <a href="#"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/map-marker.png" alt="map-marker"/></a>
-            <a href="#"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/shopping-cart.png" alt="shopping-cart"/></a>
-            <a href="#"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/user-male-circle.png" alt="user-male-circle"/></a>
+            <a href="#home"><img src="https://img.icons8.com/liquid-glass/48/home.png" alt="home"/></a>
+            <a href="#about"><img src="https://img.icons8.com/liquid-glass/48/info.png" alt="info"/></a>
+            <a href="#map"><img src="https://img.icons8.com/liquid-glass/48/map-marker.png" alt="map-marker"/></a>
+            <a href="#buy"><img src="https://img.icons8.com/liquid-glass/48/shopping-cart.png" alt="shopping-cart"/></a>
+            <a href="#contact"><img src="https://img.icons8.com/liquid-glass/48/user-male-circle.png" alt="user-male-circle"/></a>
         </nav>
     </header>
 
@@ -34,8 +39,13 @@
             <p>Produtos com garantia e certificados, tudo apenas para nossos clientes.</p>
             <p>Seja bem-vindo.</p>
 
-            <button>Sobre Nós</button>
-            <button>Compre nossos cafés</button>
+            <div class="first-button">
+                <a href="#about"><button id="about-our-shop">Sobre Nós</button></a>
+            </div>
+
+            <div class="second-button">
+                <a href="#buy"><button id="buy-our-coffee">Compre nossos cafés</button></a>
+            </div>
         </section>
 
         <section id="about">
@@ -134,22 +144,22 @@
                 <fieldset>
                     <legend>Contato</legend>
                     <p>
-                        <label for="nome"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/test-account.png" alt="test-account"/></label>
+                        <label for="nome"><img src="https://img.icons8.com/liquid-glass/48/test-account.png" alt="test-account"/></label>
                         <input type="text" name="nome" id="nome" placeholder="seu nome" minlength="3" maxlength="50" autocomplete="name" required>
                     </p>
 
                     <p>
-                        <label for="email"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/new-post.png" alt="new-post"/></label>
+                        <label for="email"><img src="https://img.icons8.com/liquid-glass/48/new-post.png" alt="new-post"/></label>
                         <input type="email" name="email" id="email" placeholder="seu email" minlength="7" maxlength="65" autocomplete="email" required>
                     </p>
 
                     <p>
-                        <label for="mensagem"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/chat-message.png" alt="chat-message"/></label>
+                        <label for="mensagem"><img src="https://img.icons8.com/liquid-glass/48/chat-message.png" alt="chat-message"/></label>
                         <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
                     </p>
 
                     <p>
-                        <label for="enviar"><img width="48" height="48" src="https://img.icons8.com/liquid-glass/48/telegram-app.png" alt="telegram-app"/></label>
+                        <label for="enviar"><img src="https://img.icons8.com/liquid-glass/48/telegram-app.png" alt="telegram-app"/></label>
                         <input type="submit" value="Enviar" id="enviar" name="enviar">
                     </p>
                 </fieldset>
