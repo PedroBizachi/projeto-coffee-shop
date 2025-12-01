@@ -3,13 +3,11 @@
     /* Colors */
     --color-v1: #fff5d8;
     --color-v2: #d2c49d;
-    --color-v3: #230b0b;
-    --color-v4: #ffecce;
+    --color-v3: #fff6e3;
+    --color-v4: #dfceab;
     --color-v5: #1b1002;
     --color-v6: #fffae6;
     --color-v7: #1b100270;
-    --color-v8: #dfceab;
-    --color-v9: #fff6e3;
 
     /* Fonts */
     --outfit-font: "Outfit", sans-serif;
@@ -185,12 +183,12 @@ main section#map figcaption p {
 
 
 main section#buy {
-    background-color: var(--color-v8);
+    background-color: var(--color-v4);
     margin: 10px 0;
 }
 
 main section#buy article {
-    background-color: var(--color-v9);
+    background-color: var(--color-v3);
     margin: 10px 0;
     padding: 7px;
     border-radius: 6.7px;
@@ -203,4 +201,50 @@ main section#buy article ul {
 
 main section#buy article ul li {
     list-style: square inside url("https://img.icons8.com/sf-black-filled/16/cafe.png");
+}
+
+
+main section#contact {
+    border: 2.5px solid var(--color-v5);
+    background-color: var(--color-v7);
+    padding: 10px 0;
+}
+
+main section#contact form fieldset {
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+}
+
+main section#contact form fieldset legend {
+    font: bold 1.5em var(--outfit-font);
+}
+
+main section#contact form fieldset p input#nome, main section#contact form fieldset p input#email {
+    position: relative;
+    bottom: 20px;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+}
+
+main section#contact form fieldset p input#nome:focus, main section#contact form fieldset p input#email:focus, main section#contact form fieldset p textarea:focus {
+    outline: 2.3px solid var(--color-v5);
+}
+
+main section#contact form fieldset p textarea {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    height: 75px;
+}
+
+main section#contact form fieldset p input#enviar {
+    border-radius: 12px;
+    font: bold 1em var(--poppins-font);
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border: none;
 }
